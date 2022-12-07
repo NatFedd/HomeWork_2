@@ -7,26 +7,26 @@ public class Main {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
         return arr;
-        // Домашнее задание 1. Задача 1
     }
 
     public static void main(String[] args) {
+    // Домашнее задание 2. Задача 1
         System.out.println("Домашнее задание 2. Задача 1");
         int[] arr = generateRandomArray();
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-            System.out.println("Сумма трат за месяц составила " + sum + " рублей");
-
+                System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+    // Домашнее задание 2. Задача 1
         System.out.println("Домашнее задание 2. Задача 2");
-        int maxSum = 0;
-        int minSum = 0;
-        //if (int i = 0; i < arr.length - 1 && arr[i + 1] != 0; i++);
-          //  if (; minSum < 0; minSum++)
+        int minSum = 100_000;
+        int maxSum = minSum + 100_000;
+            //if (int i = 0; i < arr.length - 1 && arr[i + 1] != 0; i++);
+            //if (i = minSum; i < maxSum; minSum++);
             {
             }
-            System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей. Максимальная сумма трат за день составила " + sum + " рублей");
+            System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей. Максимальная сумма трат за день составила " + maxSum + " рублей");
 
         }
         //System.out.println("Домашнее задание 2. Задача 3");
