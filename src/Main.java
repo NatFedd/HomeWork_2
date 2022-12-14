@@ -1,8 +1,6 @@
 import java.time.LocalDate;
-
-public class Main {
+    public class Main {
        public static void printYear(int year) {
-
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
             System.out.println(year + " год - висосный");
         } else {
@@ -23,7 +21,6 @@ public class Main {
             System.out.println(" ");
         }
     }
-
     public static void deliverBankCard(int deliveryDistance, int deliveryDays) {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется " + deliveryDays + " день для доставки карты");
