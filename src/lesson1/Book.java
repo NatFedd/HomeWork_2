@@ -4,12 +4,13 @@ package lesson1;
         private String Title;
         private String Author;
         private static int YearPublication;
-        public book(String Title, String Author, int YearPublication) {
-            this.title = title;
-            this.autor = autor;
+        private void yearPublication() {
+        }
+        public Book(String Title, String Author, int YearPublication) {
+            this.Title = title;
+            this.Author = author;
             this.yearPublication();
         }
-
         public String getName() {
             return this.Title;
         }
@@ -17,11 +18,6 @@ package lesson1;
         public String getAuthor() {
             return this.Author;
         }
-
-        public int getYearPublication() {
-            return this.YearPublication;
-        }
-
         public void setYearPublication(int yearPublication) {
             this.YearPublication = yearPublication;
         }
