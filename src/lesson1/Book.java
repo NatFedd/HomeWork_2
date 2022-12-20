@@ -1,24 +1,17 @@
 package lesson1;
 
     public class Book {
-        private String Name;
-        private String Surname;
+        private String Title;
         private String Author;
         private static int YearPublication;
-
-        public Author(String name, String author, String surname, int yearPublication) {
-            this Name = name;
-            this Surname = surname;
-            this Author = author;
-            this YearPublication = yearPublication;
+        public book(String Title, String Author, int YearPublication) {
+            this.title = title;
+            this.autor = autor;
+            this.yearPublication();
         }
 
         public String getName() {
-            return this.Name;
-        }
-
-        public String getSurname() {
-            return this.Surname;
+            return this.Title;
         }
 
         public String getAuthor() {
@@ -33,5 +26,3 @@ package lesson1;
             this.YearPublication = yearPublication;
         }
     }
-
-}
