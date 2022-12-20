@@ -1,24 +1,19 @@
 package lesson1;
 
-    public class Book {
-        private String Title;
-        private String Author;
-        private static int YearPublication;
-        private void yearPublication() {
-        }
-        public Book(String Title, String Author, int YearPublication) {
-            this.Title = title;
-            this.Author = author;
-            this.yearPublication();
-        }
-        public String getName() {
-            return this.Title;
-        }
-
-        public String getAuthor() {
-            return this.Author;
-        }
-        public void setYearPublication(int yearPublication) {
-            this.YearPublication = yearPublication;
-        }
+public class Book {
+    private String name;    private Author author;    private int year;    public Book(String name, Author author, int year) {
+        this.name = name;        this.author = author;        this.year = year;    }
+    public void setName(String name) {
+        this.name = name;    }
+    public void setAuthor(Author author) {
+        this.author = author;    }
+    public void setYear(int year) {
+        this.year = year;    }
+    public String getName() {
+        return name;    }
+    public Author getAuthor() {
+        return author;    }
+    public int getYear() {
+        return year;
     }
+}
