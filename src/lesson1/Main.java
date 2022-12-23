@@ -6,5 +6,6 @@ public class Main {
         Author secondAuthor = new Author("Петр", "Петров");
         Book firstBook = new Book("Букварь", firstAuthor, 2012);
         Book secondBook = new Book("Синяя", secondAuthor, 2014);
-        secondBook.setYear(2020);    }
+        secondBook.setYear(2020);
+    }
 }

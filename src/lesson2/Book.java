@@ -1,4 +1,4 @@
-package lesson1;
+package lesson2;
 
 public class Book {
     private String name;
@@ -17,6 +17,7 @@ public class Book {
     public void setAuthor(Author author) {
         this.author = author;
     }
+
     public void setYear(int year) {
         this.year = year;
     }
@@ -32,4 +33,21 @@ public class Book {
     public int getYear() {
         return year;
     }
+
+    public String toString() {
+        return "Название: " + this.name + " Автор: " + this.author.toString() + "Год выпуска: " + this.year;
+    }
+
+    public int hashCode() {
+        return this.name.hashCode() * this.author.hashCode() * this.year;
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return book.name.equals(name) && book.author.equals(author) && book.year == year;
+    }
+
+
 }
